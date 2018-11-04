@@ -1,7 +1,8 @@
-/**
- * Created by matthew on 11/4/18.
- */
+public with sharing class QueueableJob implements Queueable{
+    public void execute(QueueableContext context){
+        //Do something
 
-public with sharing class QueueableJob {
-
+        //Chaining jobs
+        System.enqueueJob(new QueueableJob());
+    }
 }
