@@ -1,0 +1,4 @@
+<aura:component description="ComponentInheritance" extensible="true">
+    <aura:attribute name="myInheritedAttribute" type="String"/>
+    {!v.body}
+</aura:component>

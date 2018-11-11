@@ -1,0 +1,10 @@
+<aura:component description="InterfaceImplementation" implements="c:Interface">
+    <aura:attribute name="myAttribute" type="String"/>
+
+    <aura:registerEvent name="myTestEvent" type="c:Event" description="Test description"/>
+
+    <aura:method name="myMethodInterface">
+        <aura:attribute name="stringAttribute" type="String" default="default string"/>
+    </aura:method>
+
+</aura:component>

@@ -1,0 +1,3 @@
+<aura:component description="EventEmitter">
+    <lightning:button variant="brand" label="Fire Event" onclick="{!c.emitEvent}"/>
+</aura:component>

@@ -1,0 +1,3 @@
+<aura:component description="EventHandler">
+    <aura:handler event="c:compEvent" action="{!c.handleEvent}"/>
+</aura:component>

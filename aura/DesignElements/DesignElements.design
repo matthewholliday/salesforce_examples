@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="TestAttribute1" description="First Test Attribute"/>
+    <design:attribute name="TestAttribute2" description="Second Test Attribute"/>
+</design:component>

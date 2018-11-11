@@ -1,0 +1,4 @@
+<aura:component description="DesignElements">
+    <aura:attribute name="TestAttribute1" type="String"/>
+    <aura:attribute name="TestAttribute2" type="Integer"/>
+</aura:component>

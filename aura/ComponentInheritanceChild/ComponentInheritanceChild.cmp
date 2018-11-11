@@ -1,0 +1,7 @@
+<aura:component description="ComponentInheritanceChild" extends="c:ComponentInheritanceParent">
+    <!--
+    Inherits attributes, events, helpers, and controllers.
+    -->
+
+    <div>Inherited Attributes: {!v.myInheritedAttribute}</div>
+</aura:component>
