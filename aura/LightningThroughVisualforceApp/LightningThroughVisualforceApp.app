@@ -1,6 +1,3 @@
-<!--
- - Created by matthew on 11/10/18.
- -->
-
-<aura:application description="LightningThroughVisualforceApp">
+<aura:application description="LightningThroughVisualforceApp" access="GLOBAL" extends="ltng:outApp">
+    <aura:dependency resource="c:LightningThroughVisualforce"/>
 </aura:application>

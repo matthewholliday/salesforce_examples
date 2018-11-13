@@ -1,2 +1,4 @@
-<aura:component description="IncludeJavascript">
+<aura:component description="IncludeJavascript" implements="flexipage:availableForAllPageTypes" access="global">
+    <ltng:require scripts="{!$Resource.jslibrary}" afterScriptsLoaded="{!c.reportSuccess}"/>
+    <lightning:button label="testLabel" onclick="{!c.testLibraryCall}"/>
 </aura:component>

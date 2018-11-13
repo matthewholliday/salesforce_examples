@@ -1,6 +1,17 @@
-<!--
- - Created by matthew on 11/10/18.
- -->
-
 <apex:page id="LightningThroughVisualforce">
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+
+    <script>
+        $Lightning.use("c:LightningThroughVisualforceApp", function() {
+            $Lightning.createComponent("c:LightningThroughVisualforce",
+                {},
+                "lightning",
+                function(cmp) {
+                    // do some stuff
+                });
+        });
+    </script>
 </apex:page>
