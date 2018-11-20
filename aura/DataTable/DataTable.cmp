@@ -1,0 +1,12 @@
+<aura:component description="DataTable" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="data" type="List" default='[{Id: "1", Name: "Russia", Capital: "Moscow"},
+                                                        {Id: "2", Name: "United States", Capital: "Washington"}]'/>
+    <aura:attribute name="columns" type="List" default="[{label: 'Id', fieldName: 'Id', type: 'text'},
+                                                         {label: 'Name', fieldName: 'Name', type: 'text'},
+                                                         {label: 'Capital', fieldName: 'Capital', type: 'text'}]"/>
+    <lightning:datatable
+            keyField="Id"
+            data="{!v.data}"
+            columns="{!v.columns}"
+            hideCheckboxColumn="true"/>
+</aura:component>
