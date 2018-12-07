@@ -6,6 +6,8 @@ public class HttpRequestServiceTest {
 
         Test.startTest();
         HttpRequestService testRequestService = new HttpRequestService('Assistenza_API', HttpRequestService.POST_METHOD);
+        testRequestService.setHeaderContentType('application/json');
+        testRequestService.setCustomHeader('Authorization', 'password');
         HttpResponse resultResponse = testRequestService.sendRequest();
         Test.stopTest();
 
