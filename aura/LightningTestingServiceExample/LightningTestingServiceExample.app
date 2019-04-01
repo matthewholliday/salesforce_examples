@@ -1,6 +1,3 @@
-<!--
- - Created by matthewholliday on 2019-03-30.
- -->
-
 <aura:application description="LightningTestingServiceExample">
+    <c:lts_jasmineRunner testFiles="{!$Resource.LightningTestingServiceExampleSuite}"/>
 </aura:application>

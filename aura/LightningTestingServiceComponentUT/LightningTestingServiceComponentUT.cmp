@@ -1,6 +1,11 @@
-<!--
- - Created by matthewholliday on 2019-03-30.
- -->
+<aura:component description="LightningTestingServiceComponentUT" controller="LTSController">
+    <aura:attribute name="myAttribute" type="String" default="abc"/>
+    <aura:attribute name="myServerAttribute" type="String" default=""/>
 
-<aura:component description="LightningTestingServiceComponentUT">
+    <div id="myAttributeId">{!v.myAttribute}</div>
+    <div id="myServerAttributeId">{!v.myServerAttribute}</div>
+
+    <aura:method name="myTestMethod" action="{!c.myTestMethod}"/>
+    <aura:method name="myTestServerMethod" action="{!c.myTestServerMethod}"/>
+
 </aura:component>

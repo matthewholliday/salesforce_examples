@@ -1,6 +1,5 @@
-<!--
- - Created by matthewholliday on 2019-03-31.
- -->
-
-<aura:component description="componentWithDataBinding">
+<aura:component>
+    <aura:attribute name="message" type="String"/>
+    <lightning:input aura:id="messageInput" value="{!v.message}"/>
+    <div aura:id="message">{!v.message}</div>
 </aura:component>

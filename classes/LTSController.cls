@@ -1,7 +1,6 @@
-/**
- * Created by matthewholliday on 2019-03-31.
- */
-
 public with sharing class LTSController {
-
+    @AuraEnabled
+    public static String getSomething(){
+        return 'xyz';
+    }
 }
